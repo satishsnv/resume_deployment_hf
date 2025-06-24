@@ -1,0 +1,78 @@
+﻿   
+
+PROFESSIONAL EXPERIENCE
+Hitachi Vantara | Senior Engineering Manager
+March 2023 – Present
+Key Skills: Java, Kotlin, Python, Flask, Fast API, Azure, AWS, PostgreSQL, MongoDB, Kafka, Redis, OpenSearch, Kubernetes, Microservices, GenAI, Qdrant DB, BentoML, vLLM, Ray Serve, Docker, LangChain, LangGraph, Google ADK, OpenAI Agents SDK, MCP protocol
+    • Lead and manage multiple scrum teams focused on the Pentaho Catalog+ product, overseeing the full project lifecycle from requirements gathering to production deployment.
+    • Architect and develop Machine Learning services, ensuring seamless integration and efficient model deployment.
+    • Spearheaded the development of GenAI-Companion, leveraging opensource LLMs and Lang Chain to provide intelligent, query-based answers from product documentation.
+    • Mentor and guide teams in best practices for software engineering, fostering innovation and collaboration.
+    • Working on building Agentic capabilities in the product, using Agentic frame works and MCP protocol
+
+EY | Assistant Director
+October 2019 – March 2023
+Key Skills: Java, JavaScript, ReactJS, NodeJS, Spring Boot, Microservices, Python, Azure, Kubernetes, Redis, Flask, Terraform
+    • Directed the Platform AI teams to deliver document intelligence APIs leveraging in-house models, Azure Document Intelligence, and Google Document AI.
+    • Led the DevOps team to provision infrastructure for seamless service deployment.
+    • Managed multiple scrum teams for EYVIA, an innovative risk assessment SAAS platform. Led design, architecture, and development of cross-functional modules, ensuring smooth handovers for ongoing enhancement and maintenance.
+    • Delivered multiple product features from initial design to production, with a focus on performance, scalability, and security.
+
+Pega Systems | Associate Architect
+March 2016 – October 2019
+Key Skills: Java, JavaScript, ELK Stack (Elasticsearch, Logstash, Kibana), AWS, OAuth 2.0, Microservices, Kubernetes, Cryptography, GDPR Compliance
+    • Spearheaded the design and development of AuthZ services as part of a monolith-to-microservices transformation, enhancing system security and scalability.
+    • Led the implementation of key security features such as data encryption, data masking, and BYOK (Bring Your Own Key) for enhanced data protection.
+    • Orchestrated the integration of GDPR and HIPAA compliance features to meet regulatory standards.
+    • Oversaw the implementation of role-based and attribute-based access controls, strengthening system security and governance.
+Rolta India Limited | Software Project Leader
+September 2012 – December 2015
+Key Skills: Java, C++, SQL, Spring, Hibernate, Leadership, Mentoring
+    • Led the design and development of the Rolta Battlefield Management System (RBMS), overseeing end-to-end ownership of multiple product modules.
+    • Drove the development of the Rolta Photogrammetry Suite (RPS), enhancing product functionality and collaborating closely with product management to deliver impactful features.
+    • Guided junior team members in adopting best practices, fostering a collaborative and high-performing team culture.
+
+HCL Technologies | Team Lead (SDET)
+September 2010 – August 2012
+Key Skills: C++, C#, VMware, Win32API
+    • Led the test automation efforts for Total Defense Antimalware SDK, certifying the product across multiple Windows OS platforms.
+    • Enhanced the automation framework to facilitate smooth deployment and testing of virus scans in virtual environments, ensuring comprehensive reporting and accuracy.
+
+Intergraph Consulting Pvt Ltd | Senior Software Analyst
+July 2007 – September 2010
+Key Skills: COM, C++, SQL, Oracle, Stored Procedures, VB
+    • Developed the Big Tiff Utility, converting digital elevation terrain data (DTED) into Tiff files and generating composite Big Tiff files for specific geographic areas.
+    • Enhanced the functionality of the GMGTech-InteropExpansionPack for improved interoperability between various product formats.
+    • Contributed to feature development for GeoMedia Professional and GeoMedia Transportation, supporting advanced data visualization and processing capabilities.
+
+EDUCATION
+    • M.Tech in Transportation Engineering
+Indian Institute of Technology (IIT) Delhi, 2007 – CGPA: 8.3
+    • B.E. in Civil Engineering
+Osmania University, 2003 – 74%
+
+TECHNICAL SKILLS
+    • Programming Languages: Java, Python, JavaScript, Kotlin, C++, C#, Rust
+    • Technologies/Tools: Microservices, Flask, Fast API, NodeJS, ReactJS, Spring Boot, Redis, Kafka, MongoDB, PostgreSQL, OpenSearch, ELK Stack, Qdrant DB, Cassandra
+    • Cloud Platforms: Azure, AWS
+    • AI/ML: OpenAI, BentoML, vLLM, Ray Serve, LangChain, LangGraph, MCP, Google ADK, OpenAI Agents SDK
+    • DevOps & Infrastructure: Kubernetes, Docker, Terraform, Azure DevOps
+
+Personal Details:
+I was born in bhatlapenumarru village located krishna district of Andhra Pradesh. 
+I did my schooling in vizianagaram, and moved to hyderabad in 1997 and continued my studies till B.Tech. After B.Tech worked as quality engineer for couple of years.
+In 2005 i went to IIT Delhi to pursue my M.Tech in Transportation Engineering. 
+In 2007 i got placed in Intergraph consulting pvt Ltd, and started my carrer as software engineer, and worked in hyderabad for various companies till 2019.
+In 2019 moved to banglore and currently working there.
+Coming to family i am a proud father of 2 beautiful angels, (elder daughter in 8th grade and younger dauther in k2) and husband of sweet wife(once software engineer and now she is homemaker).
+
+github and linked in url:
+https://github.com/satishsnv/
+https://www.linkedin.com/in/satishsnv/
+
+certifications:
+i did Kubernetes developer, adminisrator and security professional certifications in year 2022
+I did AWS Associate Architect certification in 2018
+I did datastax Cassandra developer and adminisrator certifications in 2021
+
+
