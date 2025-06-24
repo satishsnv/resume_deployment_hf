@@ -17,10 +17,15 @@ import openai
 load_dotenv()
 
 # Configure OpenAI
-openai.api_key = os.getenv("OPENAI_API_KEY")
+api_key = os.getenv("OPENAI_API_KEY")
+if api_key:
+    openai.api_key = api_key.strip().strip('"')  # Remove any quotes and whitespace
+else:
+    print("Warning: OPENAI_API_KEY not found in environment variables")
+    
 MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o")
-MAX_TOKENS = int(os.getenv("MAX_TOKENS", "30000"))
-TEMPERATURE = float(os.getenv("TEMPERATURE", "0.3"))
+MAX_TOKENS = int(os.getenv("MAX_TOKENS", "5000"))
+TEMPERATURE = float(os.getenv("TEMPERATURE", "0.5"))
 
 # Load resume content
 def load_resume_content():
@@ -95,18 +100,15 @@ def get_exact_profile_data():
 # Example questions removed for cleaner interface
 
 def chat_with_satish(message, history):
-    """Enhanced chat function with loader and proper messages format for Gradio chatbot"""
+    """Enhanced chat function with loader and proper tuple format for Gradio chatbot"""
     if not message.strip():
         return history, ""
     
     if history is None:
         history = []
     
-    # Add user message first
-    history.append({"role": "user", "content": message})
-    
-    # Show thinking loader
-    history.append({"role": "assistant", "content": "🤔 Satish thinking..."})
+    # Add user message and show thinking
+    history.append((message, "🤔 Satish thinking..."))
     yield history, ""
     
     try:
@@ -138,13 +140,14 @@ def chat_with_satish(message, history):
             Remember: You ARE Satish, not an AI assistant representing him. Base all responses on the actual information in the resume provided above."""
 
         
-        # Prepare messages for OpenAI
+        # Prepare messages for OpenAI - convert from tuple format to messages format
         messages = [{"role": "system", "content": system_prompt}]
         
-        # Add conversation history (excluding the loader message)
-        for h in history[:-1]:  # Exclude the "thinking" message
-            if isinstance(h, dict) and "role" in h and "content" in h and "thinking" not in h["content"]:
-                messages.append(h)
+        # Add conversation history (convert from tuples to messages, excluding thinking message)
+        for user_msg, bot_msg in history[:-1]:  # Exclude the "thinking" message
+            if "thinking" not in bot_msg:
+                messages.append({"role": "user", "content": user_msg})
+                messages.append({"role": "assistant", "content": bot_msg})
         
         # Add current message
         messages.append({"role": "user", "content": message})
@@ -161,12 +164,13 @@ def chat_with_satish(message, history):
                 )
                 ai_response = response.choices[0].message.content.strip()
             except Exception as api_error:
-                ai_response = f"I apologize, but I encountered an API error. This is a test response to: '{message}'"
+                print(f"OpenAI API Error: {api_error}")
+                ai_response = f"I apologize, but I encountered an API error: {str(api_error)}. Please check your OpenAI API key and try again."
         else:
-            ai_response = f"OpenAI API key not configured. This is a test response to: '{message}'"
+            ai_response = "OpenAI API key not configured. Please set your OPENAI_API_KEY in the .env file."
         
         # Replace the thinking message with actual response
-        history[-1] = {"role": "assistant", "content": ai_response}
+        history[-1] = (message, ai_response)
         
         # Log conversation
         conversation_history.append({
@@ -180,7 +184,7 @@ def chat_with_satish(message, history):
         
     except Exception as e:
         error_msg = f"I apologize, but I encountered an error: {str(e)}. Please try again."
-        history[-1] = {"role": "assistant", "content": error_msg}
+        history[-1] = (message, error_msg)
         yield history, ""
 
 def create_exact_profile_html():
@@ -388,11 +392,8 @@ with gr.Blocks(
         with gr.Column(scale=1, elem_classes=["chat-section"]):
             # Chat Messages
             chatbot = gr.Chatbot(
-                type="messages",
                 height=400,
-                elem_classes=["chat-messages"],
-                show_copy_button=True,
-                autoscroll=True
+                elem_classes=["chat-messages"]
             )
             
             # Input Row
