@@ -5,62 +5,58 @@ colorFrom: blue
 colorTo: purple
 sdk: gradio
 sdk_version: 4.44.0
-app_file: exact_react_clone.py
+app_file: app.py
 pinned: false
 license: mit
+python_version: 3.9
 ---
 
-# 🚀 Satish's AI Digital Resume
+# 🤖 Satish's AI Digital Resume
 
-An interactive AI-powered digital resume and portfolio built with FastAPI and React. Chat with Satish's AI persona to learn about his professional experience, technical expertise, and career journey.
+An interactive AI-powered digital resume built with Gradio, showcasing Satish Kumar's professional experience, skills, and expertise through an elegant chat interface.
 
 ## ✨ Features
 
-- **AI Chat Interface**: Powered by OpenAI GPT-4o-mini
-- **Professional Portfolio**: Comprehensive view of skills and experience  
-- **Interactive Experience**: Real-time conversation with typing indicators
-- **Modern UI**: Clean, responsive design with smooth animations
-- **Analytics**: Built-in conversation tracking and analytics
+- **Interactive Chat Interface**: Chat with an AI version of Satish to learn about his experience
+- **Professional UI**: Clean, modern design with responsive layout
+- **Real-time Responses**: Powered by OpenAI's GPT models
+- **Comprehensive Profile**: Skills, expertise areas, achievements, and contact information
+- **Mobile Responsive**: Works seamlessly on desktop and mobile devices
 
-## 🛠️ Technology Stack
+## 🚀 About Satish
 
-- **Backend**: FastAPI, OpenAI API, Pydantic
-- **Frontend**: React 18, Modern CSS
+**Seethepalli Naga Venkata Satish Kumar**  
+*Engineering Leader | Architect | Senior Manager*
+
+With 18 years of experience in product development and leading high-performing teams, Satish specializes in:
+
+- 🏗️ **Solution Architecture & Design**
+- 🚀 **Product Development**
+- 🤖 **AI/ML Solutions & GenAI**
+- 👥 **Team Leadership**
+
+## 🛠️ Technical Stack
+
+- **Frontend**: Gradio with custom CSS
+- **Backend**: Python with OpenAI API integration
 - **Deployment**: Hugging Face Spaces
-- **AI Model**: GPT-4o-mini
+- **AI**: GPT-4o-mini for conversational responses
 
-## 👨‍💻 About Satish
+## 💬 Try It Out
 
-Satish is a seasoned AI/ML professional with 17+ years of experience in technology leadership. Currently working at Hitachi Vantara, he specializes in:
+Ask Satish about:
+- His experience with microservices and cloud architecture
+- AI/ML projects and GenAI implementations
+- Team leadership and engineering management
+- Technical expertise and career journey
 
-- Artificial Intelligence & Machine Learning
-- Python & Data Science  
-- Cloud Technologies (AWS, Azure, GCP)
-- Team Leadership & Strategy
-- Enterprise AI Solutions
+## 📞 Contact
 
-**Education**: IIT Delhi  
-**Current Role**: AI/ML Leader at Hitachi Vantara
-
-## 🚀 Try It Out
-
-Start a conversation with questions like:
-- "Tell me about your professional background"
-- "What are your key technical skills?"
-- "How do you approach AI/ML projects?"
-- "What advice do you have for career growth?"
-
-## 🔧 Configuration
-
-To run this application, you'll need:
-1. OpenAI API key (set as `OPENAI_API_KEY` environment variable)
-2. Python 3.9+
-3. Dependencies managed via `pyproject.toml` (use `uv sync` to install)
-
-## 📄 License
-
-MIT License - Feel free to use this as inspiration for your own AI-powered resume!
+- 📧 **Email**: snvskiit@gmail.com
+- 📱 **Phone**: +91-9963699436
+- 🔗 **GitHub**: [github.com/satishsnv](https://github.com/satishsnv/)
+- 💼 **LinkedIn**: [linkedin.com/in/satishsnv](https://www.linkedin.com/in/satishsnv/)
 
 ---
 
-Built with ❤️ by Satish | Powered by FastAPI, React, and OpenAI
+*Built with ❤️ using Gradio and deployed on Hugging Face Spaces*

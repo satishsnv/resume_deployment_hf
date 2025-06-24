@@ -18,9 +18,9 @@ load_dotenv()
 
 # Configure OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
-MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o-mini")
-MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1000"))
-TEMPERATURE = float(os.getenv("TEMPERATURE", "0.7"))
+MODEL_NAME = os.getenv("MODEL_NAME", "gpt-4o")
+MAX_TOKENS = int(os.getenv("MAX_TOKENS", "30000"))
+TEMPERATURE = float(os.getenv("TEMPERATURE", "0.3"))
 
 # Load resume content
 def load_resume_content():
